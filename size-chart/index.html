@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Size Chart</title>
+<link href="../css/base.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+.size-table th, .size-table td { text-align:center }
+.size-table td:hover, .hover_bg { background: #333!important; color: #fff!important; }
+</style>
+<script src="../js/jquery-1.4.2.min.js"></script>
+<script>
+$(function () {
+    function tableHoverTips(selector) {
+ 
+        $('td', selector).bind({
+            mouseenter: function () {
+                var elem = $(this),
+                    col = elem.parents('table').find("tr:first").children(),
+                    row = elem.siblings().andSelf().first(), //加上自身td
+                    index = elem.index();
+ 
+                col.eq(index).addClass("hover_bg");
+                row.addClass("hover_bg");
+ 
+            },
+            mouseleave: function () {
+                $(this).parents("table").find("td,th").removeClass("hover_bg");
+            }
+        });
+ 
+    }
+    tableHoverTips('.size-table');
+})
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="demo">
+  <h3>Size Chart</h3>
+    <table class="table size-table"  style="width: 726px;">
+      <tbody>
+        <tr>
+          <th width="20%" class="">US Size</th>
+          <th width="20%" class="">Bust</th>
+          <th width="20%" class="">Waist</th>
+          <th width="20%" class="">Hips</th>
+          <th width="20%" class="">Hollow to Floor</th>
+        </tr>
+        <tr>
+          <td  data-orig="2">2</td>
+          <td  data-orig="83">32<em>¾</em></td>
+          <td  data-orig="65">25<em>½</em></td>
+          <td  data-orig="91">35<em>¾</em></td>
+          <td  data-orig="147">57<em>¾</em></td>
+        </tr>
+        <tr>
+          <td  data-orig="4">4</td>
+          <td  data-orig="85">33<em>½</em></td>
+          <td  data-orig="68">26<em>¾</em></td>
+          <td  data-orig="93">36<em>½</em></td>
+          <td  data-orig="147">57<em>¾</em></td>
+        </tr>
+        <tr>
+          <td  data-orig="6">6</td>
+          <td  data-orig="88">34<em>¾</em></td>
+          <td  data-orig="70">27<em>½</em></td>
+          <td  data-orig="96">37<em>¾</em></td>
+          <td  data-orig="150">59</td>
+        </tr>
+        <tr>
+          <td  data-orig="8">8</td>
+          <td  data-orig="90">35<em>½</em></td>
+          <td  data-orig="72">28<em>¼</em></td>
+          <td  data-orig="98">38<em>½</em></td>
+          <td  data-orig="150">59</td>
+        </tr>
+        <tr>
+          <td  data-orig="10">10</td>
+          <td  data-orig="93">36<em>½</em></td>
+          <td  data-orig="75">29<em>½</em></td>
+          <td  data-orig="101">39<em>¾</em></td>
+          <td  data-orig="152">59<em>¾</em></td>
+        </tr>
+        <tr>
+          <td  data-orig="12">12</td>
+          <td  data-orig="97">38<em>¼</em></td>
+          <td  data-orig="79">31</td>
+          <td  data-orig="105">41<em>¼</em></td>
+          <td  data-orig="152">59<em>¾</em></td>
+        </tr>
+        <tr>
+          <td  data-orig="14">14</td>
+          <td  data-orig="100">39<em>¼</em></td>
+          <td  data-orig="83">32<em>¾</em></td>
+          <td  data-orig="109">43</td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="16">16</td>
+          <td  data-orig="104">41</td>
+          <td  data-orig="86">33<em>¾</em></td>
+          <td  data-orig="112">44</td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="16w">16w</td>
+          <td  data-orig="109">43</td>
+          <td  data-orig="92">36<em>¼</em></td>
+          <td  data-orig="116">45<em>¾</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="18w">18w</td>
+          <td  data-orig="114">45</td>
+          <td  data-orig="98">38<em>½</em></td>
+          <td  data-orig="121">47<em>¾</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="20w">20w</td>
+          <td  data-orig="119">46<em>¾</em></td>
+          <td  data-orig="104">41</td>
+          <td  data-orig="126">49<em>½</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="22w">22w</td>
+          <td  data-orig="124">48<em>¾</em></td>
+          <td  data-orig="109">43</td>
+          <td  data-orig="131">51<em>½</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="24w">24w</td>
+          <td  data-orig="130">51<em>¼</em></td>
+          <td  data-orig="115">45<em>¼</em></td>
+          <td  data-orig="136">53<em>½</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+        <tr>
+          <td  data-orig="26w">26w</td>
+          <td  data-orig="135">53<em>¼</em></td>
+          <td  data-orig="121">47<em>¾</em></td>
+          <td  data-orig="141">55<em>½</em></td>
+          <td  data-orig="155">61</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

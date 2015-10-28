@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<style type="text/css">
+.main { width:960px; margin:30px auto}
+.calculator { width: 240px; border: 1px solid #ccc; border-radius: 20px;background: #ccc;box-shadow: 0 0 10px #000;}
+.screen { padding: 20px 0 10px 12px; }
+#screen { width:200px; text-align: right; height: 50px; background: #858585; font-size: 24px; border-radius: 10px; padding-right: 10px;border: 0; box-shadow: inset 0 0 10px #333;}
+.buttons { padding: 0 2%; }
+button { width: 45px; height: 45px; margin: 0 0 10px 5px; font:18px Arial; cursor:pointer}
+#equal { width: 100px }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="calculator">
+    <div class="screen">
+      <input id="screen" value="0"/>
+    </div>
+    <div class="buttons">
+      <button id="clear">C</button>
+      <button id="backspace">&larr;</button>
+      <button id="sign">&plusmn;</button>
+      <button class="operator" value="/">&divide;</button>
+      <button class="digit" value="7">7</button>
+      <button class="digit" value="8">8</button>
+      <button class="digit" value="9">9</button>
+      <button class="operator" value="*">&times;</button>
+      <button class="digit" value="4">4</button>
+      <button class="digit" value="5">5</button>
+      <button class="digit" value="6">6</button>
+      <button class="operator" value="-">&minus;</button>
+      <button class="digit" value="1">1</button>
+      <button class="digit" value="2">2</button>
+      <button class="digit" value="3">3</button>
+      <button class="operator" value="+">+</button>
+      <button class="digit" value="0">0</button>
+      <button class="digit" value=".">.</button>
+      <button id="equal">=</button>
+    </div>
+  </div>
+</div>
+<script src="../js/jquery-1.4.2.min.js"></script> 
+<script src="calculator.js"></script>
+</body>
+</html>

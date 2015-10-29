@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阴影box-shadow</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+pre {background: none}
+.box-shadow {
+	-webkit-box-shadow: 5px 5px 10px #ddd;
+	box-shadow: 5px 5px 10px #ddd;
+}
+.box-shadow2 {
+	-webkit-box-shadow: 5px 5px 10px #ddd inset;
+	box-shadow: 5px 5px 10px #ddd inset;
+}	
+.box-shadow3 {
+	-webkit-box-shadow: 5px 5px 10px 5px #ddd;
+	box-shadow: 5px 5px 10px 5px #ddd;
+}
+.box-shadow4 {
+	-webkit-box-shadow: 5px 5px 10px #ddd, 0 0 10px #a22041 inset;
+	box-shadow: 5px 5px 10px #ddd, 0 0 10px #a22041 inset;
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="main">
+	<h3>外部阴影</h3>
+	<div class="box-shadow">
+		<pre>.box-shadow {
+	-webkit-box-shadow: 5px 5px 10px #ddd;
+	box-shadow: 5px 5px 10px #ddd;
+}</pre>
+	</div>
+	<h3>内部阴影</h3>
+	<div class="box-shadow2">
+		<pre>.box-shadow2 {
+	-webkit-box-shadow: 5px 5px 10px #ddd inset;
+	box-shadow: 5px 5px 10px #ddd inset;
+}</pre>
+	</div>
+	<h3>外部阴影有蔓延</h3>
+	<div class="box-shadow3">
+		<pre>.box-shadow3 {
+	-webkit-box-shadow: 5px 5px 10px #ddd;
+	box-shadow: 5px 5px 10px #ddd;
+}</pre>
+	</div>
+	<h3>多重阴影</h3>
+	<div class="box-shadow4">
+		<pre>.box-shadow4 {
+	-webkit-box-shadow: 5px 5px 10px #ddd, 0 0 10px #a22041 inset;
+	box-shadow: 5px 5px 10px #ddd, 0 0 10px #a22041 inset;
+}</pre>
+	</div>
+</div>
+</div>
+</body>
+</html>

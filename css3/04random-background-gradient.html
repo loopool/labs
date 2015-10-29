@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random color background gradient</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="wrap" style="background:transparent">
+<div class="main">
+	刷新换个颜色
+</div>
+</div>
+<script src="../js/jquery-1.4.2.min.js"></script>
+<script>
+	function randomColor (flag) {
+		var gradients = [
+			['#19B6C1','#03599A','#0E88AE'],
+			['#27C4B9','#27C495','#27C4A7'],
+			['#97437E','#DC245B','#B9336C'],
+			['#136a8a','#267871','#1C717D'],
+			['#6441A5','#2a0845','#472475'],
+			['#7C8E8D','#2F3950','#56646F'],
+			['#00d2ff','#3a7bd5','#1DA6EA'],
+			['#DE6262','#F7AC7E','#EA8770']
+		];
+		var item = gradients[Math.floor(Math.random()*gradients.length)];
+		if (flag==true) {
+			$("body").css('background-image', 'linear-gradient(-90deg, ' + item[0] +', ' + item[1] + ')');
+		}
+	}
+	$(function(){
+		randomColor(true);
+	});
+	
+</script>
+</body>
+</html>

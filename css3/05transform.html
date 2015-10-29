@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变形transform</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+	h3 { margin: 50px 0}
+	.box {width: 100px; height: 100px; border: 1px dotted #999; margin-bottom: 100px;}
+	.box1 {width: 100px; height: 100px;background: orange; -webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);}
+	.box2 {width: 100px; height: 100px; background: orange; -webkit-transform: skew(20deg,20deg);
+	-ms-transform: skew(20deg,20deg);
+	-o-transform: skew(20deg,20deg);
+	transform: skew(20deg,20deg);}
+	.box3 {width: 100px; height: 100px; background: orange; -webkit-transform: scale(1.5,1.2);
+	-ms-transform: scale(1.5,1.2);
+	-o-transform: scale(1.5,1.2);
+	transform: scale(1.5,1.2);}
+	.box4 {width: 100px; height: 100px; background: orange; -webkit-transform: translate(10px,20px);
+	-ms-transform: translate(10px,20px);
+	-o-transform: translate(10px,20px);
+	transform: translate(10px,20px);}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="main">
+	<h3>旋转</h3>
+	<div class="box">
+		<div class="box1"><span>旋转</span></div>
+	</div>
+	<h3>扭曲</h3>
+	<div class="box">
+		<div class="box2"><span>扭曲</span></div>
+	</div>
+	<h3>缩放</h3>
+	<div class="box">
+		<div class="box3"><span>缩放</span></div>
+	</div>
+	<h3>移动</h3>
+	<div class="box">
+		<div class="box4"><span>移动</span></div>
+	</div>
+</div>
+</div>
+</body>
+</html>

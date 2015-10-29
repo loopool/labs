@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>过渡动画Transition</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style type="text/css">
+    h3 {
+        margin: 50px 0
+    }
+    
+    .box1 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        line-height: 100px;
+        text-align: center;
+        -webkit-transition: background 1s;
+        -o-transition: background 1s;
+        transition: background 1s;
+    }
+    
+    .box1:hover {
+        background: purple
+    }
+    
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background: green;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 100px;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+    
+    .box2:hover {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    
+    .box3 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 100px;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+    
+    .box3:hover {
+        background: purple;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <h3>背景过渡</h3>
+            <div class="box1"><span>背景过渡</span></div>
+            <h3>旋转</h3>
+            <div class="box2"><span>旋转</span></div>
+            <h3>缩放</h3>
+            <div class="box3"><span>缩放</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

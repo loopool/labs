@@ -2,8 +2,9 @@
 
 ##前端技能
 
-- [前端技能汇总](https://github.com/JacksonTian/fks)
-- [Frontend Development Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
+- [前端技能汇总](https://github.com/JacksonTian/fks) 前端开发知识结构、书籍推荐
+- [前端开发指南](https://github.com/Front-End-Developers-Hunan/Front-End-Develop-Guide) 前端开发所使用语言的主流学习资源
+- [Frontend Development Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) 海量开发资源
 
 ##网站资源
 
